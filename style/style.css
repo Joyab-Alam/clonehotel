@@ -1,0 +1,984 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+*{
+   
+    box-sizing: border-box;
+}
+
+.container{
+   width: 100%;
+       max-width: 1370px;
+    margin: 0 auto;
+}
+.fixed-position.sticky {
+    position: fixed;
+    align-items: flex-end;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    box-shadow: 0px 0px 10px grey;
+    display: flex;
+    line-height: 50px;
+}
+.scroll__top{
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 100000;
+    border: 1px solid black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    
+    
+}
+#rotate__ninty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+    -moz-transform: translate(-50%, -50%) rotate(-90deg);
+}
+.scroll__top.active{
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+img.main__bgimg {
+    width: 100%;
+    height: auto;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+}
+#backtotop img{
+    height: 755px;
+    width: 100%;
+}
+
+.hemburger__menu{
+    width: 25px;
+    height: 15px;
+    position: absolute;
+    left: 6%;
+    top: 31%;
+    cursor: pointer;
+    
+}
+.main-logo {
+   position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.check-availability-btn.btn.transparent-btn a{
+    text-decoration: none;
+}
+.btn__booknow {
+    position: absolute;
+    right: 6%;
+    top: -95%;
+    font-size: 11px;
+    color: #fff;
+}
+.btn__booknow >a{
+           padding: 10px 27px;
+    cursor: pointer;
+}
+
+a#book__nowanch {
+    border: 1px solid #000000;
+}
+
+.hemburger__menu>div:after{
+    content: '';
+    width: 22px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    background-color: #ffffff;
+}
+.hemburger__menu>div:before{
+    content: '';
+    width: 22px;
+    height: 1px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.hemburger__center {
+    width: 15px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 6px 0;
+}
+#hemburger__menu:hover{
+    width: 30px;
+}
+.animated-text {
+       position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%,-50%);
+}
+.animated-text h1{
+    font-size: 100px;
+    line-height: 100px;
+    font-family: 'OrpheusPro';
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-style: normal;
+}
+.button {
+  border: 1px solid black;
+    width: 154px;
+    height: 46px;
+  display: block;
+   background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+.button1 {
+  border: 1px solid #fff;
+    width: 154px;
+    height: 46px;
+  display: block;
+ background: linear-gradient(to right, white 50%, #202020 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.button:hover {
+  background-position: left bottom;
+}
+.button1:hover {
+  background-position: left bottom;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 46px;
+  color: black;
+  transition: all .6s ease-out;
+  display: block;
+}
+.text1 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 46px;
+  color: #fff;
+  transition: all .6s ease-out;
+  display: block;
+}
+
+.text:hover {
+  color: white;
+}
+.text1:hover {
+  color: #000;
+}
+.hero-info-inner {
+    max-width: 1236px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 21px 49px 19px 63px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 0;
+    background-color: #202020;
+  
+    align-items: center;
+}
+.hero-info-inner form, .booking-form-wrap {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+}
+
+
+.check-in-wrapper {
+    float: left;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+}
+.check-in-wrapper label {
+    float: left;
+    padding-right: 15px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.3px;
+    position: relative;
+    cursor: pointer;
+}
+.check-in-wrapper input:not([type="submit"]) {
+    float: left;
+    width: auto;
+    height: 31px;
+    font-size: 20px;
+    line-height: 31px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'OrpheusPro',sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    border: none;
+    background-color: transparent;
+    transition: all .4s ease-in-out;
+    padding: 0 0 0 20px;
+}
+.booking-input-row {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.selectric-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+.selectric-hide-select {
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+.selectric {
+    position: relative;
+}
+.booking-modal-wrap .selectric .label, .check-in-wrapper .selectric .label {
+    font-size: 20px;
+    line-height: 18px;
+    height: 17px;
+    color: #ffffff;
+    padding: 0 0 0 17px;
+    letter-spacing: 2px;
+}
+.left__heading h2{
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 0.8px;
+    color: #171717;
+    font-weight: normal;
+}
+.left__heading{
+    flex:2;
+        margin-bottom: 20px;
+}
+.right__para p{
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.35px;
+    color: #171717;
+    font-weight: normal;
+    font-style: normal;
+}
+.right__para{
+    flex: 1.7;
+    margin-top: 160px;
+}
+.head__para__img {
+    display: flex;
+    margin-top: 65px;
+}
+.left__rightimg {
+    display: flex;
+}
+.right__img{
+        margin: 114px 0px 114px 196px;
+}
+.left__img img,
+.right__img img{
+    width: 100%;
+}
+.head__para__imgsecond {
+    display: flex;
+    margin-top: 115px;
+}
+.right__parasecond {
+    flex: 1;
+        margin-top: 40px;
+}
+.left__headingsecond {
+    flex: 2;
+        margin-bottom: 50px;
+}
+.left__headingsecond h2{
+        font-size: 40px;
+    line-height: 46px;
+    letter-spacing: .4px;
+    color: #000000;
+    font-weight: normal;
+}
+ul {
+    list-style: none;
+    margin: 0;
+ 
+}
+li{
+    cursor: pointer;
+}
+ li h3 {
+    color: #d1d1d1;
+}
+li h3:active {
+     color: #171717;
+}
+.active h3{
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: .4px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+ li:first-child {
+    margin-top: 0;
+}
+.tab-show p{
+    font-size: 14px;
+}
+.tab-show a:after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #171717;
+    left: 0;
+    bottom: -6px;
+    position: absolute;
+    transition: all .3s ease-in;
+}
+.tab-show a:hover::after {
+    width: 100%;
+}
+.tab-show a {
+    position: relative;
+    margin-top: 33px;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 1.1px;
+    color: #171717;
+    border-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'HelveticaNeue';
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+.left__rightimgsecond {
+    display: flex;
+}
+.left__imgsecond  img{
+  width: 100%;
+}
+.tab-show {
+    display: none;
+    transition: all .6s ease-out;
+}
+li.anim-el.fade-from-bottom.in-view.active:hover .tab-show{
+    display: block;
+    transition: all .6s ease-out;
+}
+img#img__two__left,
+img#img__three__left {
+    display: none;
+}
+
+/* slider css */
+
+.slider{
+	width: 100%;
+	margin:80px auto;
+	position: relative;
+	overflow: hidden;
+   height: auto;
+}
+
+.slider .left-slide,.slider .right-slide{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #444444;
+  border-radius: 50%;
+  color:#ffffff;
+  font-size: 20px;
+  top:50%;
+  cursor: pointer;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 40px;
+
+}
+.slider .left-slide:hover,.slider .right-slide:hover{
+ box-shadow: 0px 0px 10px black;
+ background-color: #29a8e2;
+}
+
+.slider .left-slide{
+	left: 30px;
+}
+.slider .right-slide{
+	right: 30px;
+}
+.slider .slider-items .item img{
+	max-width: 100%;
+	display: block;
+	animation:zoom 1s ease;
+}
+
+
+.slider .slider-items .item{
+	display: none;
+	position: relative;
+}
+.slider .slider-items .item .caption{
+line-height: 60px;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+
+}
+
+.slider .slider-items .item.active{
+	display: block;
+}
+
+/* garden hotel ss */
+.hotel__garden__back{
+        background-color: #f7f7f7;
+}
+.garden_content {
+    float: right;
+    width: 46.875%;
+    margin-top: 90px;
+}
+.hotel__gardenimg {
+    width: 53.125%;
+    position: relative;
+}
+img#main__img {
+    width: 66%;
+}
+
+
+img#mini__img {
+    float: left;
+    width: 42.06896551724138%;
+    position: absolute;
+    right: 0;
+    bottom: 47px;
+   
+}
+.garden_content h3{
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: .4px;
+    color: #000000;
+    font-weight: normal;
+}
+.garden_content p{
+    margin-top: 35px;
+    margin-left: 69px;
+    color: #000000;
+}
+/* footercss */
+.footer {
+    float: left;
+    width: 100%;
+    padding-top: 135px;
+    padding-bottom: 17px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    position: relative;
+}
+.footer__top h1{
+    font-size: 160px;
+    letter-spacing: 1.5px;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    font-weight: normal;
+    margin: 0;
+
+}
+.footer__cont h4{
+        text-align: center;
+        font-size: 20px;
+        font-weight: normal;
+}
+.our-villa-item-wrap {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: space-around;
+}
+.our-villa-item {
+    margin: 0 6%;
+    width: auto;
+}
+.our-villa-item img {
+    width: auto;
+    max-height: 45px;
+    display: block;
+    margin: 0 auto;
+}
+.our-villa-item img {
+    width: auto;
+    max-height: 45px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+img.lazyloaded {
+    width: auto;
+    max-height: 45px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.arrow__icon {
+    position: absolute;
+    right: 47px;
+    top: 46%;
+    cursor: pointer;
+}
+.footer__bottomcontent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+.footer__bottomcontent span{
+      font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.25px;
+    color: #000000;
+    font-weight: normal;
+}
+.footer__bottomcontent a{
+  text-decoration: none;
+   color: #000000;
+}
+.footer__bottomcontent span a:after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #000000;
+    left: 0;
+    bottom: -2px;
+    position: absolute;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.footer__bottomcontent span a {
+    position: relative;
+}
+.footer__bottomcontent span a:hover::after {
+    width: 100%;
+}
+/* header on click css */
+.header__main__blk {
+    background-color: #000;
+    color: #fff;
+}
+.onclick__header {
+    display: flex;
+    justify-content: space-between;
+}
+.header__back {
+    margin-top: 20px;
+    cursor: pointer;
+}
+.main-menu-item h2 {
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    font-family: 'OrpheusPro',sans-serif;
+    padding-bottom: 6px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.main-menu-item h2 a {
+    color: #fff;
+    transition: all .3s ease-in;
+    text-decoration: none;
+    font-weight: normal;
+}
+.main-menu-item.active h2.active, .main-menu-item h2.active a {
+    color: #5a5a5a;
+}
+.accordion-info ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.accordion-info ul li a {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 23px;
+    color: #ffffff;
+    font-family: 'HelveticaNeue-Light';
+    font-weight: normal;
+    font-style: normal;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    text-decoration: none;
+}
+.accordion-info {
+    margin-top: -44px;
+    margin-left: -35px;
+}
+.accordion-info ul li a:hover {
+    color: #5a5a5a;
+}
+.main-menu-item h2:hover, .main-menu-item h2 a:hover {
+    color: #5a5a5a;
+}
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-right-col {
+    display: flex;
+    margin-top: 90px;
+}
+.nav-inner ul li a {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 46px;
+    letter-spacing: 0.18px;
+    color: #ffffff;
+    font-family: 'OrpheusPro',sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    position: relative;
+    text-decoration: none; 
+}
+.nav-inner ul li a:hover::after {
+    width: 100%;
+}
+
+.nav-inner ul li a:after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    left: 0;
+    bottom: 10px;
+    position: absolute;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+ul#menu-secondary-menu {
+    margin-right: 90px;
+}
+.call-to-action h6 {
+    font-size: 10px;
+    line-height: 18px;
+    color: #ffffff;
+    font-family: 'HelveticaNeue',sans-serif;
+    margin-bottom: 14px;
+}
+.call-to-action p,
+.call-to-action a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #fff;
+    font-family: 'HelveticaNeue-Light',sans-serif;
+    text-decoration: none;
+}
+.single-item {
+    float: left;
+    width: 100%;
+    margin-top: 18px;
+}
+.nav-social-link {
+    display: flex;
+}
+.nav-social-link a {
+    width: 24px;
+    margin: 0 8px;
+    display: inline-block;
+}
+.nav-social-link span, .other-villas {
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    font-family: 'HelveticaNeue-Light',sans-serif;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.fix__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.breadcrumb{
+    position: absolute;
+        top: 5%;
+    left: 10%;
+}
+
+.breadcrumb a,
+.breadcrumb span{
+    color: #fff;
+    text-decoration: none;
+}
+.middle__logo {
+    margin-top: -20px;
+}
+.onclick__header a{
+    color: #fff;
+    text-decoration: none;
+}
+.btn__booknow a{
+    text-decoration: none;
+}
+
+/* deluxe suites floor plans css */
+.floor_plans {
+    text-align: center;
+}
+.floor_plans h1{
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 0.8px;
+    color: #171717;
+    font-weight: normal;
+    
+}
+.footer.reveal a{
+    text-decoration: none;
+}
+
+.floor_plans  ul li:after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #000000;
+    left: 0;
+    bottom: 10px;
+    position: absolute;
+   
+    transition: all .3s ease-in;
+}
+.three__suiteimg {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 97px;
+}
+.three__suiteimg img{
+    max-width: 250px;
+}
+.suite__content {
+    text-align: center;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+@media(max-width: 767px)
+{
+   .breadcrumb{
+       display: none;
+   }
+    .hero-info-inner{
+        display: none;
+    }
+    .head__para__img {
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .right__para{
+        margin-top: 0;
+    }
+    .left__heading h2 {
+     margin: 0;
+    font-size: 37px;
+    line-height: 33px;
+    }
+    .left__rightimg{
+        display: block;
+    }
+    .right__img{
+        margin: 0;
+    }
+    .head__para__imgsecond{
+        display: block;
+        margin: 60px 15px 0px 15px;
+    }
+    .left__headingsecond h2 {
+    font-size: 30px;
+    line-height: 28px;
+    margin: 0;
+    }
+    .left__headingsecond {
+        margin-bottom: 20px;
+    }
+    .left__rightimgsecond {
+   display: block;
+}
+.garden_content{
+    float: none;
+    width: auto;
+        margin: 0px 15px;
+}
+.garden_content p {
+        margin: 25px 0px;
+}
+.hotel__gardenimg{
+    width: 100%;
+}
+.footer__top h1 {
+    font-size: 44px;
+}
+.our-villa-item-wrap{
+    display: block;
+}
+.arrow__icon {
+    display: none;
+}
+.our-villa-item-content {
+    margin-bottom: 13px;
+}
+.footer__bottomcontent {
+    display: block;
+    text-align: center;
+}
+.main-logo {
+    left: 20%;
+        top: 44%;
+}
+.button,
+.button1{
+        width: 90px;
+    height: 27px;
+}
+.container{
+    padding: 0px 15px;
+}
+.button1{
+        margin-right: 28px;
+            margin-top: 15px !important;
+}
+.text,
+.text1{
+    font-size: 13px;
+    line-height: 26px;
+}
+.hemburger__menu {
+    right: 6%;
+        left: auto;
+        top: 31%;
+}
+.btn__booknow{
+        right: 16%;
+        top: -80%;
+}
+.animated-text h1 {
+    font-size: 57px;
+    line-height: 58px;
+}
+#backtotop img{
+    height: auto;
+}
+.animated-text {
+        top: 47%;
+    left: 27%;
+}
+.nav__menu{
+    display: block;
+    margin-left: 40px;
+}
+ul#menu-secondary-menu {
+
+    margin-right: 0;
+}
+.call-to-action {
+    display: none;
+}
+.fix__bottom {
+    display: block;
+    text-align: center;
+}
+.nav-social-link{
+    display: block;
+}
+.middle__logo {
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+.middle__visit {
+    margin: 10px 0px;
+}
+.three__suiteimg{
+    display: block;
+   
+     text-align: center;
+}
+.floor_plans h1 {
+    font-size: 62px;
+    line-height: 70px;
+}
+.active h3 {
+    font-size: 40px;
+    line-height: 46px;
+    margin: 16px 0px;
+}
+
+}
+@media(max-width:556px){
+    .animated-text{
+        top:34%;
+    }
+}

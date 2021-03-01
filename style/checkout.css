@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container{
+   width: 100%;
+       max-width: 1370px;
+    margin: 0 auto;
+}
+.nav__item,
+.nav__item1 {
+    background-color: rgb(203, 170, 92);
+}
+.nav__firstitem h3{
+    margin: 0 auto;
+        font-size: 20px;
+    font-weight: 700;
+    color: #424242;
+}
+.nav__item1 h3{
+     margin: 0 auto;
+        font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 141px;
+}
+.nav__firstitem {
+    padding: 20px;
+}
+.nav__firstitem1 {
+    padding: 20px;
+}
+.nav__item_parent {
+    display: flex;
+    justify-content: space-around;
+}
+input.regular-montset {
+    box-sizing: border-box;
+    height: 40px;
+    width: 250px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding-left: 20px;
+    outline: none;
+}
+.promotion-code.ng-tns-c3-1.ng-star-inserted {
+    margin-top: 10px;
+        margin-right: -243px;
+}
+span.login-text.n {
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Montserrat,sans-serif;
+    color: #fff;
+    outline: 0;
+    display: block;
+    padding-right: 30px;
+    margin-top: 21px;
+    cursor: pointer;
+}
+.container.rooms__deatils {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 1px 4px 0 rgb(201 196 196 / 50%);
+    border-bottom: 1px solid #e7e5e6;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    display: flex;
+        max-width: 70%;
+}
+.right__content {
+       margin: 41px 41px 41px 0px;
+}
+.left__details {
+    margin-left: 50px;
+}
+.left__details img{
+    max-width: 90%;
+    max-height: 90%;
+}
+.right__content p{
+    line-height: 22px;
+}
+button.bold-montserrat-12 {
+    color: #fffffe;
+    text-align: center;
+    padding: 7px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    line-height: 15px;
+    width: 115px;
+    outline: none;
+    height: 31px;
+}
+.inside_rcontentparent {
+    justify-content: space-between;
+    display: flex;
+}
+ol, ul {
+    list-style: none;
+        margin: 72px 107px 0px 0px;
+}
+span.bold-montserrat.font-size {
+    font-size: 16px;
+    font-weight: 700;
+}
+span.regular-montserrat.font-size {
+    font-size: 16px;
+    color: #3c3a45;
+}
+span.bold-montserrat-26 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #424242;
+}
+span.regular-montserrat-22,
+span.bold-montserrat-22.ng-tns-c22-73.ng-star-inserted {
+    font-size: 22px;
+    color: #424242;
+}
+.show-rate-column {
+    margin-top: 66px;
+}
+.check-availability-btn.btn.transparent-btn a{
+    text-decoration: none;
+}
+.button1 {
+  border: 1px solid #fff;
+    width: 154px;
+    height: 46px;
+  display: block;
+ background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+.button1:hover {
+  background-position: left bottom;
+}
+.text1:hover {
+  color: #FFF;
+}
+.button1 {
+    border: 1px solid #000;
+    width: 100%;
+    max-width: 20%;
+    margin: 0 auto;
+    height: 46px;
+    display: block;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+.check-availability-btn.btn.transparent-btn {
+    padding: 10px;
+}
+.text1 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 46px;
+    color: #000;
+    transition: all .6s ease-out;
+    display: block;
+}
+button.mt20.btn-show-rates.pr-button {
+    border-radius: 2px;
+    opacity: .7;
+    font-family: Montserrat,sans-serif;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 19px;
+    width: 145px;
+    height: 53px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 44px;
+    margin-top: 14px;
+}
+::-webkit-input-placeholder { /* Internet Explorer 10-11 */
+ color: #fff;
+}
+.container.input__arrival {
+text-align: center;
+}
+.check-in-wrapper {
+    display: flex;
+    flex-direction: column;
+       padding: 15px;
+}
+input#datepicker-arrival {
+    width: 100%;
+    background-color: #f5f4f4;
+    line-height: 54px;
+    text-transform: uppercase;
+    border: none;
+}
+@media(max-width:767px){
+    .container.rooms__deatils{
+        display: block;
+    }
+    .button1{
+        max-width: 50%;
+    }
+    .right__content {
+    margin: 41px 0px 41px 0px;
+    text-align: center;
+}
+.inside_rcontentparent{
+    display: block;
+}
+ ul{
+    list-style: none;
+    margin: 72px 0px 0px 0px;
+}
+button.mt20.btn-show-rates.pr-button{
+    margin-left: 0;
+}
+.nav__item_parent{
+    display: block;
+    text-align: center;
+}
+.promotion-code.ng-tns-c3-1.ng-star-inserted{
+    margin-right: 0px;
+}
+span.login-text.n{
+    padding-bottom: 15px;
+    padding-right: 0;
+}
+.nav__item_parent1 {
+    text-align: center;
+}
+
+.nav__item1 h3{
+    margin-left: 0;
+}
+.left__details{
+    margin: 0;
+}
+.left__details h3{
+    padding: 10px;
+}
+}
